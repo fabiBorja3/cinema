@@ -1,10 +1,12 @@
 package co.edu.uniajc.cinema.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -31,7 +33,8 @@ public class Cinema {
 	@Column(name = "phone", nullable = false)
     private String phone;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_city")
 	@JsonIgnore
 	private City city;
 

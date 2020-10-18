@@ -27,7 +27,7 @@ public class City {
     private String name;
 
 	@OneToMany(targetEntity = Cinema.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_cinema")
+    @JoinColumn(name = "id_city")
     private List<Cinema> cinema;
 	
 	public Integer getId() {
