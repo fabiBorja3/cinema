@@ -1,0 +1,3 @@
+UPDATE `movie` SET `poster`= 'https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/b/bf/Captain_America_Civil_War_-_Poster_definitivo.png/revision/latest?cb=20191029195149&path-prefix=es'   WHERE `id` = 1;
+UPDATE `movie` SET `poster`= 'https://i.pinimg.com/originals/8c/1e/eb/8c1eebf7a60be8940f9ca753de0dd956.jpg'  WHERE `id` = 2;
+UPDATE `movie` SET `poster`= 'https://3.bp.blogspot.com/-2UHXkzTyvPE/UhlN9-y8uVI/AAAAAAAAHBg/AU0fl8-PVzk/s320/Son+Como+Ni%C3%B1os+2.jpg' WHERE `id` = 3;

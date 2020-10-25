@@ -1,0 +1,1 @@
+ALTER TABLE `movie` ADD  `poster` varchar(250) DEFAULT NULL;
