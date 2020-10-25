@@ -90,6 +90,7 @@ public class MovieService {
 					getMovie.setDirector(movieDetalle.getDirector());
 					getMovie.setOriginalLanguage(movieDetalle.getOriginalLanguage());
 					getMovie.setSypnosys(movieDetalle.getSypnosys());
+					getMovie.setPoster(movieDetalle.getPoster());
 					getMovie.setGender(movieDetalle.getGender());
 					movie = gender_Repository.save(getMovie);
 				}

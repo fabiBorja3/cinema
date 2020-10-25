@@ -48,6 +48,9 @@ public class Movie {
 	@Column(name = "sypnosys", nullable = false)
     private String sypnosys;
 	
+	@Column(name = "poster", nullable = false)
+    private String poster;
+	
 	@OneToOne(targetEntity = Gender.class,cascade= CascadeType.ALL)
 	@JoinColumn(name="id_gender", referencedColumnName = "id")
 	private Gender gender;
@@ -122,6 +125,14 @@ public class Movie {
 
 	public void setSypnosys(String sypnosys) {
 		this.sypnosys = sypnosys;
+	}
+	
+	public String getPoster() {
+		return poster;
+	}
+
+	public void setPoster(String poster) {
+		this.poster = poster;
 	}
 
 	public Gender getGender() {
